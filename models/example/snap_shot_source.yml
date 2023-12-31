@@ -1,0 +1,10 @@
+version: 2
+
+
+sources:
+  - name: snap_shot_source
+    database: DBT
+    schema: dbt_demos
+    tables:
+      - name: country_code_snap_1
+      

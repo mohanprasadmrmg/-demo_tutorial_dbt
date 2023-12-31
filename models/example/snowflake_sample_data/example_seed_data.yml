@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: example_seed_data
+    description: '{{ doc("table_events") }}'
+    columns:
+      - name: COUNTRY_CODE
+        description: "COUNTRY_CODE table 1"
+        tests:
+          - unique
+          - not_null
+        name: COUNTRY_NAME
+        description: "COUNTRY_NAME 1"
+        tests:
+          - test_is_city
+        

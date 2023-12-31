@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: snowflake_sample_data
+    description: 'demo on sample data base of snowflake '
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCDS_SF10TCL
+    tables:
+       - name: STORE_SALES
+         description: 'this is a store sales information table' 
+
+  

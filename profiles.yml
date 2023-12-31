@@ -1,0 +1,35 @@
+snowflake:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: kq43188.ap-southeast-1
+
+      # User/password auth
+      user: MOHAN
+      password: Mohan_7019974205
+
+      role: ACCOUNTADMIN
+      database: DBT
+      warehouse: COMPUTE_WH
+      schema: DBT_DEMOS
+      threads: 10
+      client_session_keep_alive: False
+
+
+ 
+    prod:
+      type: snowflake
+      account: kq43188.ap-southeast-1
+
+      # User/password auth
+      user: MOHAN
+      password: Mohan_7019974205
+
+      role: ACCOUNTADMIN
+      database: DBT
+      warehouse: COMPUTE_WH
+      schema: DBT_DEMOS
+      threads: 10
+      client_session_keep_alive: False
+      

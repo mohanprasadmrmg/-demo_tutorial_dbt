@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: for_freshness
+    database: DBT
+    schema: DBT_DEMOS
+
+    #freshness: # default freshness
+     # warn_after: {count: 90, period: minute}
+      #error_after: {count: 100, period: minute}
+
+    #loaded_at_field: updated_at 
+
+    tables: 
+        -name: sountry_code_snap_1
+         ##columns:
+           ## -name: country_code 
+            ##-name: country_name 
+            ##-nmae: updated_at     
+
+      ## name: orders
+       ## freshness: # make this a little more strict
+         ## warn_after: {count: 6, period: hour}
+         ## error_after: {count: 12, period: hour}
+          # Apply a where clause in the freshness query
+         # filter: datediff('day', _etl_loaded_at, current_timestamp) < 2

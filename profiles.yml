@@ -7,7 +7,7 @@ snowflake:
 
       # User/password auth
       user: MOHAN
-      password: Mohan_7019974205
+      password: Mohan_************
 
       role: ACCOUNTADMIN
       database: DBT
